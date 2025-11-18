@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            PlayerHearts player = other.GetComponent<PlayerHearts>();
+            PlayerHealth player = other.GetComponent<PlayerHealth>();
             if (player != null)
             {
                 player.TakeDamage(1);
